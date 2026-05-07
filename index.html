@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adi Syafriadi — Portfolio</title>
+  <meta name="description" content="Full-stack developer building desktop & AI apps. Creator of SoftwareSawit, Anthropic API Scanner.">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --dim: #8b949e;
+      --accent: #58a6ff;
+      --green: #3fb950;
+      --orange: #d29922;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 4rem 0 3rem; }
+    .hero img {
+      width: 100px; height: 100px; border-radius: 50%;
+      border: 3px solid var(--border);
+      margin-bottom: 1rem;
+    }
+    .hero h1 { font-size: 2rem; font-weight: 600; }
+    .hero p { color: var(--dim); font-size: 1.1rem; margin-top: 0.3rem; }
+    .hero .tagline { margin-top: 0.8rem; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
+    .hero .tagline span {
+      background: var(--card); border: 1px solid var(--border);
+      padding: 0.25rem 0.75rem; border-radius: 20px;
+      font-size: 0.85rem; color: var(--dim);
+    }
+
+    /* Sections */
+    section { margin: 2.5rem 0; }
+    h2 { font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+
+    /* Tech Stack */
+    .tech-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tech-list span {
+      background: var(--card); border: 1px solid var(--border);
+      padding: 0.3rem 0.8rem; border-radius: 6px;
+      font-size: 0.85rem; color: var(--accent);
+    }
+
+    /* Projects */
+    .project {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1.2rem; margin-bottom: 1rem;
+    }
+    .project h3 { font-size: 1.05rem; font-weight: 600; }
+    .project .stack { margin-top: 0.4rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .project .stack span {
+      background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.2);
+      padding: 0.15rem 0.5rem; border-radius: 4px;
+      font-size: 0.75rem; color: var(--accent);
+    }
+    .project p { color: var(--dim); font-size: 0.9rem; margin-top: 0.4rem; }
+
+    /* Stats */
+    .stats { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .stat-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1rem 1.5rem; text-align: center; min-width: 120px;
+    }
+    .stat-card .num { font-size: 1.5rem; font-weight: 700; color: var(--green); }
+    .stat-card .label { font-size: 0.8rem; color: var(--dim); margin-top: 0.2rem; }
+
+    /* Connect */
+    .connect { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem; }
+    .connect a {
+      color: var(--accent); text-decoration: none;
+      background: var(--card); border: 1px solid var(--border);
+      padding: 0.5rem 1rem; border-radius: 6px;
+      font-size: 0.9rem; transition: border-color 0.2s;
+    }
+    .connect a:hover { border-color: var(--accent); }
+
+    footer { text-align: center; color: var(--dim); font-size: 0.8rem; padding: 2rem 0; border-top: 1px solid var(--border); margin-top: 3rem; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.5rem; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <div class="hero">
+      <img src="https://avatars.githubusercontent.com/u/122665738?v=4" alt="Profile">
+      <h1>Adi Syafriadi</h1>
+      <p>Full-stack Developer · Desktop & AI Apps</p>
+      <div class="tagline">
+        <span>🇮🇩 Indonesia</span>
+        <span>⚡ Electron</span>
+        <span>🤖 AI</span>
+        <span>📊 Desktop</span>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <section>
+      <h2>🛠️ Tech Stack</h2>
+      <div class="tech-list">
+        <span>TypeScript</span> <span>Python</span> <span>JavaScript</span>
+        <span>React</span> <span>Next.js</span> <span>Node.js</span>
+        <span>Electron</span> <span>SQLite</span> <span>PostgreSQL</span>
+        <span>Cloudflare</span> <span>GitHub Actions</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>📌 Projects</h2>
+      <div class="project">
+        <h3>SoftwareSawit</h3>
+        <div class="stack"><span>Electron</span><span>TypeScript</span><span>SQLite</span></div>
+        <p>Desktop app for palm oil plantation management — multi-module, LAN sync, Excel-based data import.</p>
+      </div>
+      <div class="project">
+        <h3>Anthropic API Scanner</h3>
+        <div class="stack"><span>Python</span><span>GitHub API</span></div>
+        <p>Security scanner that detects exposed Anthropic API keys in public repositories and leaks.</p>
+      </div>
+      <div class="project">
+        <h3>Hermes Agent</h3>
+        <div class="stack"><span>Python</span><span>Nix</span><span>Docker</span></div>
+        <p>Multi-platform AI agent framework — CLI, TUI, Discord, Telegram integration (fork of NousResearch).</p>
+      </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section>
+      <h2>📊 GitHub Stats</h2>
+      <div class="stats">
+        <div class="stat-card"><div class="num" id="repos">26</div><div class="label">Repos</div></div>
+        <div class="stat-card"><div class="num" id="commits">500+</div><div class="label">Commits</div></div>
+        <div class="stat-card"><div class="num" id="languages">6</div><div class="label">Languages</div></div>
+      </div>
+    </section>
+
+    <!-- Connect -->
+    <section>
+      <h2>📫 Let's Connect</h2>
+      <div class="connect">
+        <a href="https://github.com/adi805">GitHub</a>
+        <a href="mailto:adi@syafriadi.my.id">Email</a>
+      </div>
+    </section>
+
+    <footer>© 2026 Adi Syafriadi</footer>
+  </div>
+</body>
+</html>
