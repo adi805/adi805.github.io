@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adi Syafriadi — Portfolio</title>
-  <meta name="description" content="Full-stack developer building desktop & AI apps. Creator of SoftwareSawit, Anthropic API Scanner.">
+  <title>Adi Syafriadi — AI Agent Engineer</title>
+  <meta name="description" content="AI Agent Engineer building autonomous coding agents. OpenCrabs contributor, production web tools at toolkuy.com. Running LLM workloads on Alibaba Cloud Model Studio (Qwen).">
   <style>
     :root {
       --bg: #0d1117;
@@ -58,8 +58,11 @@
       background: var(--card); border: 1px solid var(--border);
       border-radius: 8px; padding: 1.2rem; margin-bottom: 1rem;
     }
-    .project h3 { font-size: 1.05rem; font-weight: 600; }
-    .project .stack { margin-top: 0.4rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .project a { color: inherit; text-decoration: none; }
+    .project a:hover h3 { color: var(--accent); }
+    .project h3 { font-size: 1.05rem; font-weight: 600; display: inline; }
+    .project .origin { font-size: 0.75rem; color: var(--dim); margin-left: 0.4rem; }
+    .project .stack { margin-top: 0.5rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
     .project .stack span {
       background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.2);
       padding: 0.15rem 0.5rem; border-radius: 4px;
@@ -96,12 +99,12 @@
     <div class="hero">
       <img src="https://avatars.githubusercontent.com/u/122665738?v=4" alt="Profile">
       <h1>Adi Syafriadi</h1>
-      <p>Full-stack Developer · Desktop & AI Apps</p>
+      <p>AI Agent Engineer · OpenCrabs &amp; Alibaba Cloud Model Studio (Qwen)</p>
       <div class="tagline">
         <span>🇮🇩 Indonesia</span>
-        <span>⚡ Electron</span>
-        <span>🤖 AI</span>
-        <span>📊 Desktop</span>
+        <span>🤖 Autonomous Agents</span>
+        <span>🦀 Rust</span>
+        <span>⚡ TypeScript</span>
       </div>
     </div>
 
@@ -109,10 +112,10 @@
     <section>
       <h2>🛠️ Tech Stack</h2>
       <div class="tech-list">
-        <span>TypeScript</span> <span>Python</span> <span>JavaScript</span>
-        <span>React</span> <span>Next.js</span> <span>Node.js</span>
-        <span>Electron</span> <span>SQLite</span> <span>PostgreSQL</span>
-        <span>Cloudflare</span> <span>GitHub Actions</span>
+        <span>TypeScript</span> <span>Rust</span> <span>Python</span>
+        <span>React</span> <span>Node.js</span> <span>Playwright</span>
+        <span>Flutter</span> <span>Docker / Podman</span> <span>Linux VPS</span>
+        <span>Qwen · Alibaba Model Studio</span> <span>GitHub Actions</span>
       </div>
     </section>
 
@@ -120,19 +123,52 @@
     <section>
       <h2>📌 Projects</h2>
       <div class="project">
-        <h3>SoftwareSawit</h3>
-        <div class="stack"><span>Electron</span><span>TypeScript</span><span>SQLite</span></div>
-        <p>Desktop app for palm oil plantation management — multi-module, LAN sync, Excel-based data import.</p>
+        <a href="https://toolkuy.com" target="_blank" rel="noopener"><h3>toolkuy.com</h3></a>
+        <div class="stack"><span>Astro</span><span>Production</span><span>SEO</span></div>
+        <p>Web tools &amp; utilities in production, served from a self-managed VPS behind Caddy.</p>
       </div>
       <div class="project">
-        <h3>Anthropic API Scanner</h3>
-        <div class="stack"><span>Python</span><span>GitHub API</span></div>
-        <p>Security scanner that detects exposed Anthropic API keys in public repositories and leaks.</p>
+        <a href="https://github.com/adi805/Grainlify-Stellar-Contracts" target="_blank" rel="noopener"><h3>Grainlify Stellar Contracts</h3></a>
+        <div class="stack"><span>Rust</span><span>Soroban</span><span>Stellar</span></div>
+        <p>Escrow smart contracts for agricultural commodity deals on Stellar Soroban.</p>
       </div>
       <div class="project">
-        <h3>Hermes Agent</h3>
-        <div class="stack"><span>Python</span><span>Nix</span><span>Docker</span></div>
-        <p>Multi-platform AI agent framework — CLI, TUI, Discord, Telegram integration (fork of NousResearch).</p>
+        <a href="https://github.com/adi805/red-flag-checker" target="_blank" rel="noopener"><h3>Red Flag Checker</h3></a>
+        <div class="stack"><span>React</span><span>Vite</span><span>Tailwind</span></div>
+        <p>Bilingual relationship red-flag quiz, Valentine's edition. Live at <a href="https://red-flag-checker.vercel.app" target="_blank" rel="noopener" style="color:var(--accent)">red-flag-checker.vercel.app</a>.</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/adi805/pi-zed-follow" target="_blank" rel="noopener"><h3>pi-zed-follow</h3></a>
+        <div class="stack"><span>TypeScript</span><span>Zed</span><span>ACP</span></div>
+        <p>Pi extension that auto-opens files in the Zed editor when the agent writes or edits them.</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/adi805/PiDev-Custom" target="_blank" rel="noopener"><h3>PiDev Custom</h3></a>
+        <div class="stack"><span>TypeScript</span><span>Extensions</span><span>Skills</span></div>
+        <p>Custom extensions and skills for the Pi coding agent.</p>
+      </div>
+    </section>
+
+    <!-- Open Source Contributions -->
+    <section>
+      <h2>🌐 Open Source</h2>
+      <div class="project">
+        <a href="https://github.com/adi805/opencrabs" target="_blank" rel="noopener"><h3>opencrabs</h3></a>
+        <span class="origin">contributor · upstream <a href="https://github.com/adolfousier/opencrabs" target="_blank" rel="noopener" style="color:var(--accent)">adolfousier/opencrabs</a></span>
+        <div class="stack"><span>Rust</span><span>CLI / TUI</span><span>Daemon</span></div>
+        <p>The all-in-one autonomous AI agent living in your terminal. I run it daily in production and maintain a hotfix branch on my fork.</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/adi805/socialcrabs" target="_blank" rel="noopener"><h3>socialcrabs</h3></a>
+        <span class="origin">contributor · upstream <a href="https://github.com/adolfousier/socialcrabs" target="_blank" rel="noopener" style="color:var(--accent)">adolfousier/socialcrabs</a></span>
+        <div class="stack"><span>TypeScript</span><span>Playwright</span></div>
+        <p>Human-like social media automation (Instagram, X, LinkedIn) built for OpenCrabs.</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/adi805/GeoLibre" target="_blank" rel="noopener"><h3>GeoLibre</h3></a>
+        <span class="origin">contributor · upstream <a href="https://github.com/opengeos/GeoLibre" target="_blank" rel="noopener" style="color:var(--accent)">opengeos/GeoLibre</a></span>
+        <div class="stack"><span>TypeScript</span><span>GIS</span><span>Jupyter</span></div>
+        <p>Lightweight, cloud-native GIS platform running in the browser, desktop, mobile, and Jupyter.</p>
       </div>
     </section>
 
@@ -140,9 +176,9 @@
     <section>
       <h2>📊 GitHub Stats</h2>
       <div class="stats">
-        <div class="stat-card"><div class="num" id="repos">26</div><div class="label">Repos</div></div>
-        <div class="stat-card"><div class="num" id="commits">500+</div><div class="label">Commits</div></div>
-        <div class="stat-card"><div class="num" id="languages">6</div><div class="label">Languages</div></div>
+        <div class="stat-card"><div class="num" id="repos">10</div><div class="label">Public Repos</div></div>
+        <div class="stat-card"><div class="num" id="followers">2</div><div class="label">Followers</div></div>
+        <div class="stat-card"><div class="num">5</div><div class="label">Languages</div></div>
       </div>
     </section>
 
@@ -152,10 +188,25 @@
       <div class="connect">
         <a href="https://github.com/adi805">GitHub</a>
         <a href="mailto:adi@syafriadi.my.id">Email</a>
+        <a href="https://toolkuy.com">toolkuy.com</a>
+        <a href="https://toolkuy.com/go/qwen">Alibaba Cloud Qwen</a>
       </div>
     </section>
 
-    <footer>© 2026 Adi Syafriadi</footer>
+    <footer>
+      © 2026 Adi Syafriadi · <a href="https://toolkuy.com/go/qwen" style="color:var(--dim)">Qwen link</a> is a referral link
+    </footer>
   </div>
+
+  <script>
+    // Live GitHub stats (fallback values stay if the API is rate-limited)
+    fetch('https://api.github.com/users/adi805')
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.public_repos) document.getElementById('repos').textContent = d.public_repos;
+        if (d && typeof d.followers === 'number') document.getElementById('followers').textContent = d.followers;
+      })
+      .catch(function () {});
+  </script>
 </body>
 </html>
