@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adi Syafriadi — AI Agent Engineer</title>
-  <meta name="description" content="AI Agent Engineer building autonomous coding agents. OpenCrabs contributor, production web tools at toolkuy.com. Running LLM workloads on Alibaba Cloud Model Studio (Qwen).">
+  <meta name="description" content="AI Agent Engineer building autonomous coding agents and the deterministic gates that keep them honest. Rust, TypeScript, Python, C#. Production web tools at toolkuy.com.">
   <style>
     :root {
       --bg: #0d1117;
@@ -99,12 +99,13 @@
     <div class="hero">
       <img src="https://avatars.githubusercontent.com/u/122665738?v=4" alt="Profile">
       <h1>Adi Syafriadi</h1>
-      <p>AI Agent Engineer · OpenCrabs &amp; Alibaba Cloud Model Studio (Qwen)</p>
+      <p>AI Agent Engineer · Autonomous Systems</p>
       <div class="tagline">
         <span>🇮🇩 Indonesia</span>
-        <span>🤖 Autonomous Agents</span>
+        <span>🤖 Agent Orchestration</span>
         <span>🦀 Rust</span>
         <span>⚡ TypeScript</span>
+        <span>🗺️ Field GIS</span>
       </div>
     </div>
 
@@ -112,16 +113,32 @@
     <section>
       <h2>🛠️ Tech Stack</h2>
       <div class="tech-list">
-        <span>TypeScript</span> <span>Rust</span> <span>Python</span>
-        <span>React</span> <span>Node.js</span> <span>Playwright</span>
-        <span>Flutter</span> <span>Docker / Podman</span> <span>Linux VPS</span>
-        <span>Qwen · Alibaba Model Studio</span> <span>GitHub Actions</span>
+        <span>Rust</span> <span>TypeScript</span> <span>Python</span> <span>C#</span>
+        <span>React</span> <span>Node.js</span> <span>Astro</span> <span>Tauri</span>
+        <span>Playwright</span> <span>Flutter</span>
+        <span>Docker / Podman</span> <span>Linux VPS</span> <span>Caddy</span>
+        <span>GitHub Actions</span> <span>Qwen · Alibaba Model Studio</span>
       </div>
     </section>
 
     <!-- Projects -->
     <section>
       <h2>📌 Projects</h2>
+      <div class="project">
+        <a href="https://github.com/adi805/Compositor-Windows" target="_blank" rel="noopener"><h3>Compositor for Windows</h3></a>
+        <div class="stack"><span>C#</span><span>.NET</span><span>Desktop</span></div>
+        <p>A Photoshop alternative for Windows, built from scratch and ported from the macOS original (MIT).</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/adi805/GeoApps" target="_blank" rel="noopener"><h3>GeoApps</h3></a>
+        <div class="stack"><span>TypeScript</span><span>Tauri</span><span>Android</span><span>GIS</span></div>
+        <p>Field mapping for Android: offline maps, GeoPDF/GeoTIFF import and geofence alerts, built on GeoLibre (MIT).</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/adi805/opencrabs-browser" target="_blank" rel="noopener"><h3>opencrabs-browser</h3></a>
+        <div class="stack"><span>Rust</span><span>CDP</span><span>Agents</span></div>
+        <p>CDP browser daemon for agents: one protocol endpoint, a swappable engine behind it, enforced memory budget.</p>
+      </div>
       <div class="project">
         <a href="https://toolkuy.com" target="_blank" rel="noopener"><h3>toolkuy.com</h3></a>
         <div class="stack"><span>Astro</span><span>Production</span><span>SEO</span></div>
@@ -133,19 +150,9 @@
         <p>Escrow smart contracts for agricultural commodity deals on Stellar Soroban.</p>
       </div>
       <div class="project">
-        <a href="https://github.com/adi805/red-flag-checker" target="_blank" rel="noopener"><h3>Red Flag Checker</h3></a>
-        <div class="stack"><span>React</span><span>Vite</span><span>Tailwind</span></div>
-        <p>Bilingual relationship red-flag quiz, Valentine's edition. Live at <a href="https://red-flag-checker.vercel.app" target="_blank" rel="noopener" style="color:var(--accent)">red-flag-checker.vercel.app</a>.</p>
-      </div>
-      <div class="project">
         <a href="https://github.com/adi805/pi-zed-follow" target="_blank" rel="noopener"><h3>pi-zed-follow</h3></a>
         <div class="stack"><span>TypeScript</span><span>Zed</span><span>ACP</span></div>
         <p>Pi extension that auto-opens files in the Zed editor when the agent writes or edits them.</p>
-      </div>
-      <div class="project">
-        <a href="https://github.com/adi805/PiDev-Custom" target="_blank" rel="noopener"><h3>PiDev Custom</h3></a>
-        <div class="stack"><span>TypeScript</span><span>Extensions</span><span>Skills</span></div>
-        <p>Custom extensions and skills for the Pi coding agent.</p>
       </div>
     </section>
 
@@ -153,19 +160,19 @@
     <section>
       <h2>🌐 Open Source</h2>
       <div class="project">
-        <a href="https://github.com/adi805/opencrabs" target="_blank" rel="noopener"><h3>opencrabs</h3></a>
-        <span class="origin">contributor · upstream <a href="https://github.com/adolfousier/opencrabs" target="_blank" rel="noopener" style="color:var(--accent)">adolfousier/opencrabs</a></span>
+        <a href="https://github.com/opencrabs/opencrabs" target="_blank" rel="noopener"><h3>opencrabs</h3></a>
+        <span class="origin">contributor · upstream <a href="https://github.com/opencrabs/opencrabs" target="_blank" rel="noopener" style="color:var(--accent)">opencrabs/opencrabs</a></span>
         <div class="stack"><span>Rust</span><span>CLI / TUI</span><span>Daemon</span></div>
-        <p>The all-in-one autonomous AI agent living in your terminal. I run it daily in production and maintain a hotfix branch on my fork.</p>
+        <p>The all-in-one autonomous AI agent living in your terminal. I run it daily in production and ship Linux/X11 GUI builds in <a href="https://github.com/adi805/opencrabs-gui-x11" target="_blank" rel="noopener" style="color:var(--accent)">opencrabs-gui-x11</a>.</p>
       </div>
       <div class="project">
-        <a href="https://github.com/adi805/socialcrabs" target="_blank" rel="noopener"><h3>socialcrabs</h3></a>
+        <a href="https://github.com/adolfousier/socialcrabs" target="_blank" rel="noopener"><h3>socialcrabs</h3></a>
         <span class="origin">contributor · upstream <a href="https://github.com/adolfousier/socialcrabs" target="_blank" rel="noopener" style="color:var(--accent)">adolfousier/socialcrabs</a></span>
         <div class="stack"><span>TypeScript</span><span>Playwright</span></div>
         <p>Human-like social media automation (Instagram, X, LinkedIn) built for OpenCrabs.</p>
       </div>
       <div class="project">
-        <a href="https://github.com/adi805/GeoLibre" target="_blank" rel="noopener"><h3>GeoLibre</h3></a>
+        <a href="https://github.com/opengeos/GeoLibre" target="_blank" rel="noopener"><h3>GeoLibre</h3></a>
         <span class="origin">contributor · upstream <a href="https://github.com/opengeos/GeoLibre" target="_blank" rel="noopener" style="color:var(--accent)">opengeos/GeoLibre</a></span>
         <div class="stack"><span>TypeScript</span><span>GIS</span><span>Jupyter</span></div>
         <p>Lightweight, cloud-native GIS platform running in the browser, desktop, mobile, and Jupyter.</p>
@@ -176,9 +183,9 @@
     <section>
       <h2>📊 GitHub Stats</h2>
       <div class="stats">
-        <div class="stat-card"><div class="num" id="repos">10</div><div class="label">Public Repos</div></div>
-        <div class="stat-card"><div class="num" id="followers">2</div><div class="label">Followers</div></div>
-        <div class="stat-card"><div class="num">5</div><div class="label">Languages</div></div>
+        <div class="stat-card"><div class="num" id="repos">21</div><div class="label">Public Repos</div></div>
+        <div class="stat-card"><div class="num" id="followers">6</div><div class="label">Followers</div></div>
+        <div class="stat-card"><div class="num">8</div><div class="label">Languages</div></div>
       </div>
     </section>
 
@@ -187,14 +194,14 @@
       <h2>📫 Let's Connect</h2>
       <div class="connect">
         <a href="https://github.com/adi805">GitHub</a>
+        <a href="https://x.com/syafriadit1">X</a>
         <a href="mailto:adi@syafriadi.my.id">Email</a>
         <a href="https://toolkuy.com">toolkuy.com</a>
-        <a href="https://toolkuy.com/go/qwen">Alibaba Cloud Qwen</a>
       </div>
     </section>
 
     <footer>
-      © 2026 Adi Syafriadi · <a href="https://toolkuy.com/go/qwen" style="color:var(--dim)">Qwen link</a> is a referral link
+      © 2026 Adi Syafriadi
     </footer>
   </div>
 
